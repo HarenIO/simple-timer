@@ -1,0 +1,81 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+
+.circle {
+  height: 400px;
+  width: 400px;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 50px #9ecaed;
+  border-radius: 50%;
+}
+
+.timer {
+  position: relative;
+  display: inline-block;
+}
+
+* {
+  font: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #474E68;
+}
+
+.timer input {
+  display: block;
+  border: none;
+  width: 240px;
+  font-size: 90px;
+  text-align: center;
+  background: #474E68;
+  color: #9ecaed;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 2px 0 #000, -1px 0 0 #000;
+}
+
+.timer button {
+  background: #474E68;
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  color: #9ecaed;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 2px 0 #000, -1px 0 0 #000;
+}
+
+.timer button:hover{
+  text-shadow: 1px 0 0 #000, 0 1px 0 #000, 0 2px 0 #000, 1px 0 0 #000;
+}
+
+.timer button:focus {
+  outline: none;
+}
+
+.timer input:focus {
+  outline: none;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
